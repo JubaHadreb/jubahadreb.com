@@ -1,0 +1,937 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, /*em,*/ img, ins, kbd, q, s, samp,
+small, strike, /*strong,*/ sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Fin de reset***************************************************************************************************************/
+
+/*Accueil***************************************************************************************************************/
+
+header{
+	font-family: Roboto;
+}
+
+header nav{
+	margin-bottom: 10px;
+}
+
+header nav ul li{
+	margin-top: 10px;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	color: #82368c;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin: 5px 5px;
+}
+
+header nav ul li a:hover{
+	color: #fff;
+	background-color: #82368c;
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+header nav ul li .nav_on{
+	color: #fff;
+	background-color: #82368c;
+}
+
+header div #JubaHadreb{
+	font-size: calc(1rem + .6vw);
+	color: #000;
+	font-weight: bold;
+	margin-top: 3px;
+}
+
+header div #JubaHadreb:hover{
+	color: #82368c;
+	-webkit-transition: color 1s ease; 
+	-moz-transition: color 1s ease; 
+	-ms-transition: color 1s ease; 
+	-o-transition: color 1s ease; 
+	transition: color 1s ease;
+}
+
+header div #JubaHadreb span{
+	color: #82368c;
+}
+
+footer{
+	background-color: #82368c;
+	padding: 15px 0px;
+}
+
+footer a{
+	font-family: Roboto;
+	font-size: calc(1rem + .6vw);
+	color: #fff;
+	font-weight: bold;
+}
+
+footer a:hover{
+	color: #000;
+	-webkit-transition: color 1s ease; 
+	-moz-transition: color 1s ease; 
+	-ms-transition: color 1s ease; 
+	-o-transition: color 1s ease; 
+	transition: color 1s ease;
+}
+
+body a{
+	text-decoration: none;
+}
+
+main h1{
+	font-family: Roboto;
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
+	display: block;
+
+}
+
+main h1 p:nth-child(1){
+	font-weight: bold;
+	margin-top: 16px;
+}
+
+main h2{
+	font-weight: normal;
+	font-size: calc(0.8rem + .6vw);
+	color: #000;
+}
+
+main h3{
+	font-weight: bold;
+	color: #82368c;
+}
+
+#main_title{
+	position: relative;
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main_presentation{
+	font-family: myriad pro;
+	margin-top: 2rem;
+}
+
+#main_presentation span{
+	font-weight: bold;
+	color: #82368c;
+}
+
+#ProjetsDigitaux{
+	margin-bottom: 2rem;
+}
+
+#ProjetsDigitaux ul{
+	padding-left: 0;
+}
+
+#ProjetsDigitaux ul li .img_grey:hover{
+	outline: 20px solid rgba(75,75,75,0.5);
+	outline-offset: -20px;
+	-webkit-transition: outline 1s ease; 
+	-moz-transition: outline 1s ease; 
+	-ms-transition: outline 1s ease; 
+	-o-transition: outline 1s ease; 
+	transition: outline 1s ease;
+}
+
+#ProjetsDigitaux p{
+	color: #fff;
+	font-weight: bold;
+	font-size: calc(0.8rem + .6vw);
+	text-transform: uppercase;
+}
+
+#ProjetsDigitaux .txt_grey{
+	background-color: #4b4b4b;
+	padding: 5px 10px;
+}
+
+#ProjetsDigitaux .plus{
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #000;
+}
+
+#ProjetsDigitaux .plus:hover{
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+#OeuvresArtistiques{
+	margin-bottom: 2rem;
+}
+
+#OeuvresArtistiques ul{
+	padding-left: 0;
+}
+
+#OeuvresArtistiques ul li .img_purple:hover{
+	outline: 20px solid rgba(130,54,140,0.5);
+	outline-offset: -20px;
+	-webkit-transition: outline 1s ease; 
+	-moz-transition: outline 1s ease; 
+	-ms-transition: outline 1s ease; 
+	-o-transition: outline 1s ease; 
+	transition: outline 1s ease;
+}
+
+#OeuvresArtistiques p{
+	color: #fff;
+	font-weight: bold;
+	font-size: calc(0.8rem + .6vw);
+	text-transform: uppercase;
+}
+
+#OeuvresArtistiques .txt_purple{
+	background-color: #82368c;
+	padding: 5px 10px;
+}
+
+#OeuvresArtistiques .plus{
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #000;
+}
+
+#OeuvresArtistiques .plus:hover{
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+#main_expertises{
+	margin-bottom: 2rem;
+}
+
+#main_expertises ul{
+	padding-left: 0;
+}
+
+#main_expertises p{
+	font-size: calc(1.3rem + .6vw);
+	font-weight: bold;
+	color: #82368c;
+}
+
+#main_expertises .plus{
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #000;
+}
+
+#main_expertises .plus:hover{
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+#Echanges{
+	margin-bottom: 2rem;
+}
+
+#Echanges #envoyer{
+	font-weight: bold;
+	color: #fff;
+	background-color: green;
+	margin: 0 auto;
+	padding: 5px 0px;
+}
+
+#Echanges #annuler{
+	font-weight: bold;
+	color: #fff;
+	background-color: rgba(255,0,0,0.8);
+	margin: 0 auto;
+	padding: 5px 0px;
+}
+
+#Echanges div{
+	padding-right: 0px;
+}
+
+#Echanges form{
+	background-color: #e6d7e8;
+	text-align: left;
+	padding: 10px 10px;
+}
+
+#Echanges form input{
+	color: #82368c;
+	border: 2px solid #82368c;
+	border-radius: 8px;
+	margin-bottom: 0.2rem;
+}
+
+#Echanges form textarea{
+	width: 500px;
+	resize:none;
+	color: #82368c;
+	border: 2px solid #82368c;
+	border-radius: 8px;
+}
+
+#Echanges form .envoyez{
+	color: #000;
+	background-color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+#Echanges form .envoyez:hover{
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+#Echanges #Echanges_img{
+	position: relative;
+	background-color: #82368c;
+	overflow: hidden;
+}
+
+#Echanges #Echanges_img img{
+  	position: absolute;
+  	right: 0;
+  	bottom: 0;
+}
+
+#Echanges #ancre img:hover{
+	width: 4%;
+	-webkit-transition: width 1s ease; 
+	-moz-transition: width 1s ease; 
+	-ms-transition: width 1s ease; 
+	-o-transition: width 1s ease; 
+	transition: width 1s ease;
+}
+
+#main_socials{
+	padding-left: 0px;
+}
+
+#main_socials li{
+	padding: 10px 0px;
+}
+
+#main_socials li a{
+	display: block;
+}
+
+#main_socials #linkedin{
+	background-color: rgba(75,75,75,0.8);
+}
+
+#main_socials #twitter{
+	background-color: rgba(130,54,140,0.8);
+}
+
+#main_socials #linkedin:hover{
+	background-color: rgba(75,75,75,1);
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+#main_socials #twitter:hover{
+	background-color: rgba(130,54,140,1);
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+/*Accueil Responsive***************************************************************************************************************/
+
+@media only screen and (max-width: 1400px){
+
+#Echanges form textarea{
+	width: 450px;
+}
+
+}
+
+@media only screen and (max-width: 1200px){
+
+#Echanges form textarea{
+	width: 380px;
+}
+
+}
+
+@media only screen and (max-width: 992px){
+
+main h1{
+	font-size: calc(1.3rem + .6vw);
+
+}
+
+#Echanges form textarea{
+	width: 280px;
+}
+
+}
+
+@media only screen and (max-width: 768px){
+
+#JubaHadreb{
+	text-align: center;
+}
+
+header nav{
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+header nav ul{
+	display: inline-block;
+  text-align: center;
+  padding-left: 0;
+}
+
+main h1{
+	font-size: calc(1.2rem + .6vw);
+
+}
+
+#Echanges #ancre img{
+	width: 10%;
+}
+
+#Echanges #ancre img:hover{
+	width: 8%;
+}
+
+#main_socials li:first-child{
+	padding: 0px;
+}
+
+}
+
+/*Digital Art***************************************************************************************************************/
+
+#main_projets{
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+#main_projets #main_projets_nav{
+	padding: 0;
+}
+
+#main_projets #main_projets_nav .main_projets_nav_on{
+	color: #82368c;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2px 4px;
+	border: 3px solid #82368c;
+}
+
+#main_projets #main_projets_nav .main_projets_nav_off{
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2px 4px;
+	border: 3px solid #000;
+}
+
+
+#main_projets #main_projets_nav li a:hover{
+	color: #82368c;
+	-webkit-transition: color 0.5s ease; 
+	-moz-transition: color 0.5s ease; 
+	-ms-transition: color 0.5s ease; 
+	-o-transition: color 0.5s ease; 
+	transition: color 0.5s ease;
+	border-color: #82368c;
+	-webkit-transition: border-color 0.5s ease; 
+	-moz-transition: border-color 0.5s ease; 
+	-ms-transition: border-color 0.5s ease; 
+	-o-transition: border-color 0.5s ease; 
+	transition: border-color 0.5s ease;
+}
+
+#main_projets #main_projets_list{
+	padding: 0;
+}
+
+#main_projets #main_projets_list li{
+	padding: 5px;
+}
+
+#main_projets #main_projets_list .projet_container{
+	position: relative;
+	padding: 0;
+}
+
+#main_projets #main_projets_list .projet_container p:first-child{
+	color: #fff;
+	font-weight: bold;
+	font-size: calc(0.8rem + .6vw);
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+#main_projets #main_projets_list .projet_container p:nth-child(2){
+	color: #fff;
+	font-size: calc(0.8rem + .6vw);
+}
+
+#main_projets #main_projets_list .projet_container p:nth-child(3){
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #fff;
+	width: 25%;
+	margin: 0 auto;
+}
+
+#main_projets #main_projets_list .projet_container div a{
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 0px;
+	display: block;
+}
+
+#main_projets #main_projets_list .projet_container div a:hover{
+	background-color: rgba(0,0,0,0.8);
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+#main_projets .plus{
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #000;
+}
+
+#main_projets .plus:hover{
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+/*Digital Art Responsive***************************************************************************************************************/
+
+@media only screen and (max-width: 992px){
+
+#main_projets #main_projets_list .projet_container p:nth-child(3){
+	width: 35%;
+}
+
+}
+
+@media only screen and (max-width: 576px){
+
+#main_projets #main_projets_nav{
+	font-size: 0.8rem;
+}
+
+}
+
+/*Expertises***************************************************************************************************************/
+
+#main_presentation .img_expertises{
+	margin-bottom: 2rem;
+}
+
+#main_presentation p:nth-child(3){
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #82368c;
+}
+
+#main_presentation p:nth-child(5){
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Projet***************************************************************************************************************/
+
+#retour_projets{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#retour_projets div div{
+	background-color: #82368c;
+	padding: 5px;
+}
+
+#retour_projets div div:hover{
+	transform: scale(0.9);
+	-webkit-transition: transform 1s ease; 
+	-moz-transition: transform 1s ease; 
+	-ms-transition: transform 1s ease; 
+	-o-transition: transform 1s ease; 
+	transition: transform 1s ease;
+}
+
+#retour_projets div a{
+	font-family: Roboto;
+	font-size: 1.1rem;
+	color: #fff;
+	font-weight: bold;
+}
+
+#retour_projets div div img{
+	float: left;
+}
+
+#retour_projets div div p{
+	position: relative;
+	top: 25%;
+}
+
+#projet_presentation p a{
+	font-weight: bold;
+	color: rgba(130,54,140,0.7);
+	text-decoration: underline;
+}
+
+#projet_presentation p a:hover{
+	color: rgba(130,54,140,1);
+}
+
+.projet{
+	margin-bottom: 2rem;
+}
+
+.projet h2{
+	font-weight: bold;
+}
+
+.projet .projet_img{
+	margin-bottom: 1rem;
+}
+
+.projet .plus{
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #000;
+}
+
+.projet .plus:hover{
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+#projet_print div:first-child{
+	background-color: rgba(130,54,140,0.8);
+}
+
+/* Styles the thumbnail */
+
+a.lightbox{
+ padding: 0;
+}
+
+a.lightbox:hover{
+	transform: scale(1.02);
+	-webkit-transition: transform 1s ease; 
+	-moz-transition: transform 1s ease; 
+	-ms-transition: transform 1s ease; 
+	-o-transition: transform 1s ease; 
+	transition: transform 1s ease;
+	box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3);
+}
+
+a.lightbox img{
+ margin: 0;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+ 
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+  
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+overflow:scroll;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0;
+}
+
+#projet_video{
+	padding: 0;
+}
+
+#projet_photo{
+	padding: 0;
+}
+
+#projet_photo div:first-child{
+	background-color: rgba(130,54,140,0.8);
+}
+
+#autre_projets #autre_projets_list{
+	padding: 0;
+	margin: 0;
+}
+
+#autre_projets #autre_projets_list li{
+	padding: 0;
+}
+
+#autre_projets #autre_projets_list .autre_projet_container{
+	position: relative;
+	padding: 0;
+}
+
+#autre_projets #autre_projets_list .autre_projet_container p:first-child{
+	color: #fff;
+	font-weight: bold;
+	font-size: calc(0.8rem + .6vw);
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+#autre_projets #autre_projets_list .autre_projet_container p:nth-child(2){
+	color: #fff;
+	font-size: calc(0.8rem + .6vw);
+}
+
+#autre_projets #autre_projets_list .autre_projet_container p:nth-child(3){
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 2px solid #fff;
+	width: 25%;
+	margin: 0 auto;
+}
+
+#autre_projets #autre_projets_list .autre_projet_container div a{
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 0px;
+	display: block;
+}
+
+#autre_projets #autre_projets_list .autre_projet_container div a:hover{
+	background-color: rgba(0,0,0,0.7);
+	-webkit-transition: background-color 1s ease; 
+	-moz-transition: background-color 1s ease; 
+	-ms-transition: background-color 1s ease; 
+	-o-transition: background-color 1s ease; 
+	transition: background-color 1s ease;
+}
+
+/*Projet Responsive***************************************************************************************************************/
+
+@media only screen and (max-width: 992px){
+
+#autre_projets #autre_projets_list .autre_projet_container p:nth-child(3){
+	width: 35%;
+}
+
+}
+
+@media only screen and (max-width: 576px){
+
+#retour_projets div a{
+	font-size: 0.9rem;
+}
+
+#retour_projets div div p{
+	top: 30%;
+}
+
+}
